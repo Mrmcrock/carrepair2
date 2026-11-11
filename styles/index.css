@@ -32,41 +32,92 @@ body{
 /* Desktop view */
 @media screen and (min-width: 1000px) {
     .row1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-    margin: auto;
-    padding-top: 1px;
-    padding-bottom: 40px;
-    border: 2px solid black;
-    background-color: #faf8f7;
-}
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: auto;
+        padding-top: 1px;
+        padding-bottom: 40px;
+        border: 2px solid black;
+        background-color: #faf8f7;
+    }
 
-.row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    margin: 30px 10px 10px 10px;
-    padding: 0px;
-}
+    .row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin: 30px 10px 10px 10px;
+        padding: 0px;
+    }
 
-.row-img1, .row-img2, .row-img3 {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 0px;
-}
+    .row-img1, .row-img2, .row-img3 {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 0px;
+    }
 
-.row-text1, .row-text2, .row-text3 {
-    text-align: left;
-    margin-left: 20px;
-    width: 230px;
-}
+    .row-text1, .row-text2, .row-text3 {
+        text-align: left;
+        margin-left: 20px;
+        width: 230px;
+    }
 
-.row-text1 h3, .row-text2 h3, .row-text3 h3 {
-    margin-top: 0px;
-}
+    .row-text1 p, .row-text2 p, .row-text3 p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #78706f;
+    }
+
+    .row-text1 a, .row-text2 a, .row-text3 a{
+        color: #78706f;
+    }
+
+    .row-text1 a:hover, .row-text2 a:hover, .row-text3 a:hover {
+        color: black;
+    }
+    .row-text1 h3, .row-text2 h3, .row-text3 h3 {
+        margin-top: 0px;
+    }
+    .row2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 75%;
+        margin: auto;
+        padding-top: 1px;
+        padding-bottom: 40px;
+        border: 2px solid black;
+    }
+    .row2-img1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .row2-text {
+        text-align: center;
+    }
+    .row2-text h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #525252;
+    }
+    .row2-text h1 span {
+        display: block; 
+        font-size: 35px;
+        margin-left: 44px;
+    }
+    .row2-text p {
+        color: #78706f;
+    }
+    .row2-text a {
+        color: #ff6600;
+        text-decoration: none;
+    }
 }
