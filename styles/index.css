@@ -1,32 +1,79 @@
 /* mobile view */
-body{
-    background-color: #E9E9E9;
-    margin: 0px;
-    padding: 0px;
-}
-.row1{
+	body{
+		background-color: #E9E9E9;
+		margin: 0px;
+		padding: 0px;
+	}
+	.row1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 30px 0px 0px 0px;
+		padding: 0px;
+		border: 2px solid black;
+		background-color: #faf8f7;
+		width: 100%;
+	}
+	.row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 20px 20px 20px 20px;
+		padding: 0px;
+	}
+    .row-text1 p, .row-text2 p, .row-text3 p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #78706f;
+    }
+
+    .row-text1 a, .row-text2 a, .row-text3 a{
+        color: #78706f;
+    }
+.row1 .row-img1, .row1 .row-img2, .row1 .row-img3{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 0px 0px 0px;
-    padding: 0px;
-    border: 2px solid black;
-    background-color: #faf8f7;
+    margin-top: 0px;
 }
-.row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 30px 10px 10px 10px;
-  padding: 0px;
+	.row2-text p {
+        color: #78706f;
+    }
+    .row2-text a {
+        color: #ff6600;
+        text-decoration: none;
+    }
+.row2 .appointment{
+    display: none;
 }
 
 /* Tablet/Ipad view */
 @media screen and (min-width: 700px) {
-
+	.row2 {
+		display: flex;
+		background-color: white;
+	}
+	.row2-text h1{
+		text-align: center;
+	}
+	.row2-text p {
+        color: #78706f;
+    }
+	.row2-img1{
+		display: flex;
+		justify-content: center;
+	}
+    .row2-text a {
+        color: #ff6600;
+        text-decoration: none;
+    }
+	.row2 .appointment {
+		display: block;
+		text-align: center;
+	}
 }
 
 /* Desktop view */
@@ -43,7 +90,6 @@ body{
         border: 2px solid black;
         background-color: #faf8f7;
     }
-
     .row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service {
         display: flex;
         flex-direction: row;
@@ -83,16 +129,25 @@ body{
         margin-top: 0px;
     }
     .row2 {
+		display: block;
+        background-color: white;
+        width: 75%;
+        margin: auto;
+        margin-top: 5px;
+        padding-top: 1px;
+        padding-bottom: 40px;
+        border: 2px solid black;
+    }
+	.row2-container{
+		margin: auto;
+	}
+    .row2-inner-container {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: white;
         width: 75%;
         margin: auto;
-        padding-top: 1px;
-        padding-bottom: 40px;
-        border: 2px solid black;
     }
     .row2-img1 {
         display: flex;
@@ -119,5 +174,16 @@ body{
     .row2-text a {
         color: #ff6600;
         text-decoration: none;
+    }
+    .row2-text a:hover {
+        opacity: 0.7;
+    }
+    .row2 .appointment {
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+        margin-left: 550px;
+        margin-top: 20px;
+        margin-bottom: -40px;
     }
 }
