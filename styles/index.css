@@ -3,6 +3,8 @@
 		background-color: #E9E9E9;
 		margin: 0px;
 		padding: 0px;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 	.row1{
 		display: flex;
@@ -90,7 +92,7 @@
         border: 2px solid black;
         background-color: #faf8f7;
     }
-    .row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service {
+    .row1 #affordable-prices, .row1 #extensive-warranty, .row1 #fast-service , .row3 #engine-maintenace{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -99,33 +101,47 @@
         margin: 30px 10px 10px 10px;
         padding: 0px;
     }
-
-    .row-img1, .row-img2, .row-img3 {
+	.row3 #engine-maintenace{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin: 30px 10px 10px 10px;
+        padding: 0px;
+    }
+    .row-img1, .row-img2, .row-img3, .row3 .img1{
         display: flex;
         align-items: flex-start;
         margin-top: 0px;
     }
 
-    .row-text1, .row-text2, .row-text3 {
+    .row-text1, .row-text2, .row-text3, .row3-text {
         text-align: left;
         margin-left: 20px;
         width: 230px;
     }
 
-    .row-text1 p, .row-text2 p, .row-text3 p {
+    .row-text1 p, .row-text2 p, .row-text3 p, .row3-text p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #78706f;
+    }
+	.row3-text p{
+		width: 25em;
         margin-top: 0px;
         margin-bottom: 0px;
         color: #78706f;
     }
 
-    .row-text1 a, .row-text2 a, .row-text3 a{
+    .row-text1 a, .row-text2 a, .row-text3 a, .row3-text a{
         color: #78706f;
     }
 
-    .row-text1 a:hover, .row-text2 a:hover, .row-text3 a:hover {
+    .row-text1 a:hover, .row-text2 a:hover, .row-text3 a:hover, .row3-text a:hover{
         color: black;
     }
-    .row-text1 h3, .row-text2 h3, .row-text3 h3 {
+    .row-text1 h3, .row-text2 h3, .row-text3 h3 , .row3-text h3{
         margin-top: 0px;
     }
     .row2 {
@@ -146,8 +162,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 75%;
+        width: 95%;
         margin: auto;
+		border: 2px solid black;
     }
     .row2-img1 {
         display: flex;
@@ -155,8 +172,17 @@
         justify-content: center;
         margin-right: 20px;
     }
-    .row2-text {
+	.row2-img1 img{
+		max-width: 900px;
+		height: auto;
+		margin-top: -2px;
+		margin-left: -25px;
+		margin-right: 20px;
+		/*border: 10px solid black;*/
+	}
+    .row2-text p{
         text-align: center;
+		margin-bottom: 60px;
     }
     .row2-text h1 {
         font-size: 60px;
@@ -182,8 +208,16 @@
         display: flex;
         align-items: center;
         /*justify-content: center;*/
-        margin-left: 550px;
-        margin-top: 20px;
+        margin-left: 500px;
+        margin-top: -105px;
         margin-bottom: -40px;
     }
+}
+.row3 .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.row3 .title h2{
+	color: #78706f;
 }
